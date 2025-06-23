@@ -1,0 +1,70 @@
+body {
+  background-color: #121212;
+}
+
+:root {
+  --main: #f76c01;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  color: aliceblue;
+}
+header nav {
+  width: 60%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(123, 123, 123);
+}
+header nav ul li a:hover {
+  color: var(--main);
+}
+header .button button {
+  border-radius: 5px;
+  background-color: var(--main);
+  color: white;
+  border: none;
+  padding: 5px 20px;
+}
+
+section.me {
+  display: flex;
+}
+section.me .info {
+  width: 50%;
+  margin-top: 60px;
+}
+section.me .info .hi {
+  color: darkgray;
+}
+section.me .info .name {
+  color: lightgrey;
+  font-size: 1.4em;
+}
+section.me .info .prof {
+  color: var(--main);
+  font-size: 2em;
+}
+section.me .photo {
+  width: 50%;
+}
+section.me .photo img {
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
