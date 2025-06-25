@@ -1,45 +1,53 @@
-body{
+body {
     background-color: #121212;
 }
-:root{
+
+:root {
     --main: #f76c01;
-    
+
 }
-.container{
+
+.container {
     max-width: 1000px;
     margin: 0 auto;
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .logo{
+
+    .logo {
         color: var(--main);
         font-size: 3em;
         font-weight: 700;
     }
-    nav{
+
+    nav {
         width: 60%;
 
-        ul{
+        ul {
             display: flex;
             justify-content: space-between;
-            li{
+
+            li {
                 list-style: none;
-                
-                a{
+
+                a {
                     text-decoration: none;
                     color: rgb(123, 123, 123);
-                    &:hover{
+
+                    &:hover {
                         color: var(--main);
                     }
                 }
-                
+
             }
         }
     }
-    .button{
-        button{
+
+    .button {
+        button {
             border-radius: 5px;
             background-color: var(--main);
             color: white;
@@ -50,51 +58,146 @@ header{
     }
 }
 
-section.me{
+section.me {
     display: flex;
-    .info{
-        width:50%;
+
+    .info {
+        width: 50%;
         margin-top: 60px;
-        .hi{
+
+        .hi {
             color: darkgray;
         }
-        .name{
+
+        .name {
             color: lightgrey;
             font-size: 1.4em;
             padding-top: 10px;
             padding-bottom: 20px;
 
         }
-        .prof{
+
+        .prof {
             color: var(--main);
             font-size: 2em;
             font-weight: bold;
         }
-        .icons{
+
+        .icons {
             display: flex;
             margin-top: 10px;
-            
-            .instagram{
+
+            .instagram {
                 padding-left: 10px;
                 padding-right: 10px;
             }
         }
-        .button-info{
+
+        .button-info {
             margin-top: 20px;
-            button{
-           border-radius: 5px;
-            background-color: var(--main);
-            color: white;
-            border: none;
-            padding: 10px 30px; 
+
+            button {
+                border-radius: 5px;
+                background-color: var(--main);
+                color: white;
+                border: none;
+                padding: 10px 30px;
             }
         }
     }
-    .photo{
 
-        width:50%;
-        img{
-            width:70%;
+    .photo {
+
+        width: 50%;
+
+        img {
+            width: 70%;
+        }
+    }
+}
+
+section.skills {
+    
+    .text-head{
+        color: var(--main);
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 2em;
+        font-weight: 700;
+        
+    }
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+       
+        .card {
+            width: 240px;
+            height: 200px;
+            text-align: center;
+            background: #424242;
+             box-sizing: border-box;
+            border-radius: 10px;
+            padding-top: 50px;
+            color: var(--main);
+
+            .icon{
+                
+                font-size: 2.7em;
+            }
+            .text {
+                
+                font-size: 1.5em;
+            }
+            &:hover {
+                        
+                        transform: scale(1.1);
+                        background: var(--main);
+                        transition: 0.5s;
+                        color: #ffffff;
+                    }
+        }
+
+    }
+}
+.portfolio{
+    .port-title{
+        color: var(--main);
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .projects{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        color: #e8e8e8;
+        
+        .project{
+            border-radius: 20px;
+            background-color: #252525;
+            .picture{
+
+                img{
+
+                    width: 300px;
+                    height: 300px;
+                    border-top-left-radius: 20px ;
+                    border-top-right-radius: 20px ;
+                }
+            }
+            .title{
+                font-size: 2em;
+                
+            }
+            .description{
+                font-size: 1.5em;
+            }
         }
     }
 }

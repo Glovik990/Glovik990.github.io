@@ -90,4 +90,73 @@ section.me .photo {
 }
 section.me .photo img {
   width: 70%;
+}
+
+section.skills .text-head {
+  color: var(--main);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: 700;
+}
+section.skills .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+section.skills .cards .card {
+  width: 240px;
+  height: 200px;
+  text-align: center;
+  background: #424242;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-top: 50px;
+  color: var(--main);
+}
+section.skills .cards .card .icon {
+  font-size: 2.7em;
+}
+section.skills .cards .card .text {
+  font-size: 1.5em;
+}
+section.skills .cards .card:hover {
+  transform: scale(1.1);
+  background: var(--main);
+  transition: 0.5s;
+  color: #ffffff;
+}
+
+.portfolio .port-title {
+  color: var(--main);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.portfolio .projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  color: #e8e8e8;
+}
+.portfolio .projects .project {
+  border-radius: 20px;
+  background-color: #252525;
+}
+.portfolio .projects .project .picture img {
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.portfolio .projects .project .title {
+  font-size: 2em;
+}
+.portfolio .projects .project .description {
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
