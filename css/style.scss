@@ -3,6 +3,7 @@ body{
 }
 :root{
     --main: #f76c01;
+    
 }
 .container{
     max-width: 1000px;
@@ -13,7 +14,9 @@ header{
     justify-content: space-between;
     align-items: center;
     .logo{
-        color: aliceblue;
+        color: var(--main);
+        font-size: 3em;
+        font-weight: 700;
     }
     nav{
         width: 60%;
@@ -58,16 +61,40 @@ section.me{
         .name{
             color: lightgrey;
             font-size: 1.4em;
+            padding-top: 10px;
+            padding-bottom: 20px;
+
         }
         .prof{
             color: var(--main);
             font-size: 2em;
+            font-weight: bold;
+        }
+        .icons{
+            display: flex;
+            margin-top: 10px;
+            
+            .instagram{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .button-info{
+            margin-top: 20px;
+            button{
+           border-radius: 5px;
+            background-color: var(--main);
+            color: white;
+            border: none;
+            padding: 10px 30px; 
+            }
         }
     }
     .photo{
+
         width:50%;
         img{
-            width:100%;
+            width:70%;
         }
     }
 }
