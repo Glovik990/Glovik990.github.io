@@ -86,10 +86,17 @@ section.me {
         .icons {
             display: flex;
             margin-top: 10px;
+            .telegram{
+                font-size: 60px;
+            }
 
             .instagram {
                 padding-left: 10px;
                 padding-right: 10px;
+                font-size: 60px;
+            }
+            .viber{
+                font-size: 60px;
             }
         }
 
@@ -197,6 +204,71 @@ section.skills {
             }
             .description{
                 font-size: 1.5em;
+            }
+        }
+    }
+}
+section.contact-me {
+    .cont-text{
+        text-align: center;
+        color: var(--main);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 2em;
+        font-weight: 700;
+    }
+    
+    .contacts{
+        color: var(--main);
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+        .email{
+            list-style: none;
+            text-decoration: none;
+        }
+        .phone{
+
+        }
+        .telegram-id{
+
+        }
+        .city{
+
+        }
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: var(--main);
+    background-color: #424242;
+    .logo-footer {
+        color: var(--main);
+        font-size: 3em;
+        font-weight: 700;
+    }
+    nav {
+        width: 60%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(123, 123, 123);
+
+                    &:hover {
+                        color: var(--main);
+                    }
+                }
+
             }
         }
     }

@@ -71,9 +71,16 @@ section.me .info .icons {
   display: flex;
   margin-top: 10px;
 }
+section.me .info .icons .telegram {
+  font-size: 60px;
+}
 section.me .info .icons .instagram {
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 60px;
+}
+section.me .info .icons .viber {
+  font-size: 60px;
 }
 section.me .info .button-info {
   margin-top: 20px;
@@ -159,4 +166,52 @@ section.skills .cards .card:hover {
 }
 .portfolio .projects .project .description {
   font-size: 1.5em;
+}
+
+section.contact-me .cont-text {
+  text-align: center;
+  color: var(--main);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: 700;
+}
+section.contact-me .contacts {
+  color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.contact-me .contacts .email {
+  list-style: none;
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--main);
+  background-color: #424242;
+}
+footer .logo-footer {
+  color: var(--main);
+  font-size: 3em;
+  font-weight: 700;
+}
+footer nav {
+  width: 60%;
+}
+footer nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: rgb(123, 123, 123);
+}
+footer nav ul li a:hover {
+  color: var(--main);
 }/*# sourceMappingURL=style.css.map */
