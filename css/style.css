@@ -1,5 +1,6 @@
 body {
   background-color: #121212;
+  margin: 0;
 }
 
 :root {
@@ -12,33 +13,40 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  z-index: 1000;
+  box-shadow: 0px 0px 20px var(--main);
+}
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .logo {
+header .container .logo {
   color: var(--main);
   font-size: 3em;
   font-weight: 700;
 }
-header nav {
+header .container nav {
   width: 60%;
 }
-header nav ul {
+header .container nav ul {
   display: flex;
   justify-content: space-between;
 }
-header nav ul li {
+header .container nav ul li {
   list-style: none;
 }
-header nav ul li a {
+header .container nav ul li a {
   text-decoration: none;
   color: rgb(123, 123, 123);
 }
-header nav ul li a:hover {
+header .container nav ul li a:hover {
   color: var(--main);
 }
-header .button button {
+header .container .button button {
   border-radius: 5px;
   background-color: var(--main);
   color: white;
@@ -181,10 +189,15 @@ section.contact-me .contacts {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-section.contact-me .contacts .email {
-  list-style: none;
+section.contact-me .contacts div {
+  width: 50%;
+  text-align: center;
+}
+section.contact-me .contacts .email a {
   text-decoration: none;
+  color: var(--main);
 }
 footer {
   display: flex;
